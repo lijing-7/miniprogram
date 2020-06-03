@@ -1,0 +1,89 @@
+/* pages/login/login.wxss */
+/* pages/login/login.wxss */
+page{
+  height: 100%;
+  background-size:100%;
+  /* background-image: url('http://songlijuan.top/bk2.jpg'); */
+}
+ .weui-cell{
+   padding: 5px;
+ }
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #f2f2f2;     */
+} 
+ 
+/*登录图片*/
+.login-icon{
+  flex: none;
+  margin: 0 auto;
+  margin-top: 200rpx;
+}
+.login-img{
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 110rpx;
+  opacity: 0.6;
+}
+ 
+/*表单内容*/
+.login-from {
+  margin-top: 90px;
+  flex: auto;
+  height:100%;
+}
+ 
+/* 输入框 */
+.mysch{
+  width: 90%;
+  height: 80rpx;
+  margin: 3px auto;
+  border:1px solid #ccc;
+  border-radius: 50rpx;
+}
+.myno{
+  width: 90%;
+  height: 80rpx;
+  margin: 10px auto;
+  border:1px solid #ccc;
+  border-radius: 50rpx;
+}
+.mypwd{
+  width: 90%;
+  height: 80rpx;
+  margin: 0 auto;
+  border:1px solid #ccc;
+  border-radius: 50rpx;
+  margin-top: 20rpx;
+}
+/*按钮*/
+.btn{
+  margin-top: 35px;
+}
+.loginBtnView {
+  /* background-color: aqua; */
+  margin-top: 0px;
+  margin-bottom: 25px;
+  padding-bottom: 80rpx;
+}
+ 
+.loginBtn {
+  margin-top: 35px;
+  width: 90%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+  border: 0.1rpx solid #ccc;
+  border-radius: 40rpx;
+  padding-bottom: 20rpx;
+}
+ 
+.nameImage, .keyImage {
+  margin-right: 10px;
+  width: 14px;
+  height: 14px
+}

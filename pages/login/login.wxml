@@ -1,0 +1,50 @@
+<!--pages/login/login.wxml-->
+<view class="container"> 
+  <view class="login-icon">  
+    <image class="login-img" src="../../images/logo.png"></image>  
+  </view>  
+  <view class="login-from">  
+  <!-- <form bindsubmit="formSubmit" class='form'> -->
+   <view class="mysch">
+    <!-- 学校 -->
+        <view class="weui-cell ">
+        <image class="nameImage" src="/images/name.png"></image>
+          <!-- <view class="section__title">请选择学校</view> -->
+          <picker bindchange="bindPickerChange"   range="{{array}}">
+          <input class="weui-input picker" name="sch" bindinput="schinput" value='{{selected}}' placeholder="请选择学校"></input>
+          </picker>
+        </view>
+    </view>
+    <view class="myno">
+    <!-- 账号 -->
+      <view class="weui-cell weui-cell_input">
+          <image class="nameImage" src="/images/name.png"></image>
+          <view class="weui-cell__bd">
+              <input class="weui-input" name="no" bindinput="noinput" value='{{no}}' placeholder="请输入账号" />
+          </view>
+      </view>
+    </view>
+    <view class="mypwd">
+      <!-- 密码 -->
+      <view class="weui-cell weui-cell_input">
+      <image class="nameImage" src="/images/key.png"></image>
+          <!-- <view class="weui-cell__hd">
+              <view class="weui-label">密码</view>
+          </view> -->
+          <view class="weui-cell__bd">
+              <input class="weui-input" type="password" name="pwd" bindinput="pwdinput" placeholder="请输入密码" value='{{pwd}}'/>
+          </view>
+      </view>
+    </view>
+
+    <button class=" btn weui-btn weui-btn_primary"  bindtap="navitohome">登录</button>
+ 
+     <!--按钮-->  
+      <!-- <button class="btn weui-btn weui-btn_primary" size="{{primarySize}}"  form-type='submit' >登录</button>   -->
+      <!-- disabled='{{disabled}}' -->
+
+
+    <!-- </form> -->
+  
+  </view>  
+</view>  

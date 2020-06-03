@@ -1,0 +1,94 @@
+<!--index.wxml-->
+<!--新闻公告 -->
+<view class="notice">【公告】政治思想工作的重要性，培养学科核心素养</view>
+<!-- 轮播图 -->
+<!-- <view>
+  <swiper indicator-dots='true' indicator-color='red' indicator-active-color='yellow' autoplay='true'>
+    <swiper-item>
+      <image src='/images/index/lunbo1.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/index/lunbo2.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/index/lunbo3.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/index/lunbo4.jpg'></image>
+    </swiper-item>
+  </swiper>
+</view> -->
+<!--新闻通知 begin-->
+	<view class="fine-puzzle mt30">
+		<view class="floor-title">新闻通知 <text>NEWS</text><icon></icon></view>	
+		<scroll-view scroll-x="true" class="puzzle-list" id="puzzle_list">
+			<view class="puzzle-li box-sizing">
+				<navigator url="">
+					<view class="puzzle-img"><image src="/images/index/lunbo2.jpg" alt=""></image></view>
+					<text class="puzzle-name plr20">重磅！'在经历中学习——疫情防控公开课'隆重上线</text>
+					<view class="puzzle-ft plr20 clearfix">
+						<view class="puzzleft-l fl">
+							<text class="puzzle-ll-text3">2019-08-12</text>
+						</view>
+						<view class="puzzleft-r fr">
+							<text class="box-sizing">查看详情</text>
+						</view>
+					</view>
+				</navigator>
+			</view>
+			<view class="puzzle-li box-sizing">
+				<navigator url="">
+					<view class="puzzle-img"><image src="/images/index/lunbo4.jpg" alt=""></image></view>
+					<text class="puzzle-name plr20">重磅！'在经历中学习——疫情防控公开课'隆重上线</text>
+					<view class="puzzle-ft plr20 clearfix">
+						<view class="puzzleft-l fl">
+							<text class="puzzle-ll-text3">2019-08-12</text>
+						</view>
+						<view class="puzzleft-r fr">
+							<text class="box-sizing">查看详情</text>
+						</view>
+					</view>
+				</navigator>
+			</view>
+			<view class="puzzle-li box-sizing">
+				<navigator url="">
+					<view class="puzzle-img"><image src="/images/index/lunbo1.jpg" alt=""></image></view>
+					<text class="puzzle-name plr20">重磅！'在经历中学习——疫情防控公开课'隆重上线</text>
+					<view class="puzzle-ft plr20 clearfix">
+						<view class="puzzleft-l fl">
+							<text class="puzzle-ll-text3">2019-08-12</text>
+						</view>
+						<view class="puzzleft-r fr">
+							<text class="box-sizing">查看详情</text>
+						</view>
+					</view>
+				</navigator>
+			</view>
+		</scroll-view>
+	</view>
+<!--新闻通知 end-->
+<!-- 今日课程 -->
+<view class="todayclass">
+    <view class="todayclass-title">今日课程</view>
+    <view class="todayclass-list">
+          <view class="list-item" wx:for="{{todayclasslist}}">
+            <view class="todayclasslist-set">
+              <text class="todayclasslist-time">{{todayclasslist[index].time}}</text>
+              <text class="todayclasslist-cname">{{todayclasslist[index].classname}}</text>
+              <text class="todayclasslist-entry" bindtap="entryclass" data-classtime="{{todayclasslist[index].time}}" data-classname="{{todayclasslist[index].classname}}">进入课堂</text>
+            </view>
+          </view>
+    </view>
+</view>
+<!-- 作业 -->
+<view class="job">
+    <view class="swiper-tab">
+        <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">个人作业</view>
+        <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">小组作业</view>
+    </view> 
+    <swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
+        <swiper-item><view>第一屏111111111111111111111111111111111111111111111111111111不就成了可编辑关闭窗口吗v</view></swiper-item>
+        <swiper-item><view>第二屏</view></swiper-item>
+    </swiper>
+</view>
+

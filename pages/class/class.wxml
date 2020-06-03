@@ -1,0 +1,6 @@
+<!--pages/class/class.wxml-->
+<text>pages/class/class.wxml</text>
+<view>{{cname}}and{{ctime}}</view>
+<view>开始上课</view>
+<view>上课时间：{{ctime}}</view>
+<view>课程名称：{{cname}}</view>

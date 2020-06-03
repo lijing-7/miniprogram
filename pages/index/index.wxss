@@ -1,0 +1,191 @@
+/**index.wxss**/
+.notice {
+  line-height: 30rpx;
+  font-size: 28rpx;
+  color: #222222;
+  background: white  30rpx 27rpx;
+  background-size: 32rpx 29rpx;
+  padding: 26rpx 15rpx;
+  border-top: 1px solid #f9f9f9;
+  text-indent: 30rpx;
+}
+/* 轮播图开始 */
+/* swiper{
+  width: 100%;
+  height: 400rpx;
+}
+swiper image{
+  width: 100%;
+  height: 100%;
+} */
+/* 轮播图结束 */
+/*公用title begin*/
+.floor-title {
+  height: 96rpx;
+  line-height: 96rpx;
+  text-align: center;
+  color: #222;
+  font-size: 34rpx;
+  font-weight: bold;
+  position: relative;
+  background-color: rgb(248, 240, 240);
+}
+.floor-title text {
+  color: #b9e1f0;
+  font-size: 30rpx;
+  padding-right: 14rpx;
+}
+.floor-title icon{
+position: absolute;
+  top: 40rpx;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border-top: 10rpx solid transparent;
+  border-bottom: 10rpx solid transparent;
+  border-left: 10rpx solid #222222;
+}
+/*公用title end*/
+/*拼团begin*/
+.fine-puzzle{background-color: rgb(248, 240, 240);}
+.puzzle-list{
+    padding-bottom: 20rpx;
+    display: flex;
+    white-space: nowrap;
+}
+.puzzle-list .puzzle-li{
+  width: 83.2%;
+  margin-left: 4%;
+  border: 1px solid #f6f6f6;
+  position: relative;
+  display: inline-block;
+}
+.puzzle-list .puzzle-li:last-child{margin-right: 4%;}
+.puzzle-img,.puzzle-img image{
+  width: 100%;
+  height: 333rpx;
+}
+.plr20{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.puzzle-name{
+    font-size: 30rpx;
+    line-height: 40rpx;
+    font-weight: bold;
+    color: #222222;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.puzzle-ft{
+  height: 70rpx;
+  line-height: 70rpx;
+  margin-bottom: 1rpx;
+}
+.puzzleft-l{width: 55%;}
+.puzzleft-l text{
+  float: left;
+  color: #555555;
+  font-size: 22rpx;
+}
+.puzzleft-l text:first-child{color: #0a0a0a;}
+.puzzleft-l text.puzzle-ll-text3{margin-right: 18rpx;}
+.puzzleft-r{width: 100%;}
+.puzzleft-r text{
+  float: right;
+  display: block;
+  text-align: center;
+}
+.puzzleft-r text:first-child{
+  width: 30%;
+  height: 64rpx;
+  line-height: 64rpx;
+  background-color: rgb(216, 201, 201);
+  font-size: 26rpx;
+  color: #968b84;
+  border: 1px dashed #faf6f4;
+ 
+}
+/*拼团end*/
+.todayclass{
+  width: 100%;
+  height: 470rpx;
+  background-color: bisque;
+}
+.todayclass-title{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: rgb(225, 234, 247);
+  margin-top: 10rpx;
+  font-size: 36rpx;
+}
+.todayclass-list{
+  width: 100%;
+  height: 390rpx;
+  background-color: rgb(225, 234, 247);
+}
+.todayclasslist-set{
+  width: 100%;
+  height: 120rpx;
+  margin-bottom:10rpx;
+  background-color: rgb(240, 248, 248);
+}
+.todayclasslist-time{
+  width: 20%;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 26rpx;
+  background-color: rgb(206, 229, 235);
+  float: left;
+}
+.todayclasslist-cname{
+  width: 60%;
+  height: 120rpx;
+  font-size: 34rpx;
+  background: rgb(245, 217, 209);
+  float: left;
+  /* padding-top: 15rpx; */
+}
+.todayclasslist-entry{
+  width: 20%;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 32rpx;
+  background-color: rgb(206, 229, 235);
+  float: right;
+}
+.job{
+  width: 100%;
+  height: 400rpx;
+  background: rgb(248, 214, 147);
+  margin-top:10rpx;
+}
+.job .swiper-tab{
+  width:100%;
+  height: 80rpx;
+  background: brown;
+  text-align: center;
+  line-height: 80rpx;
+  border-bottom: 4rpx solid rgb(8, 8, 8);
+  font-size: 36rpx;
+}
+.swiper-tab-item{
+  display: inline-block;
+  width: 50%;
+  color:black;
+}
+.active{
+  color:rgb(244, 247, 115);
+  border-bottom: 4rpx solid rgb(244, 247, 115);
+}
