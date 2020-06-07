@@ -24,6 +24,49 @@ Page({
       }
     ],
     currentTab:0,
+    personjoblist:[
+      {
+        id:"1",
+        name:"思修的目的到底是为了什么？上思修可以将一个人的思想修正吗？",
+        stime:"2019-05-13",
+        etime:"2019-05-19",
+        detail:""
+      },
+      {
+        id:"2",
+        name:"为什么要思修为什么为什么为什么？",
+        stime:"2019-05-13",
+        etime:"2019-05-19",
+        detail:"因为要坚决维护以习近平主席领导下的政策方针，爱党爱国家爱人民的思想要贯彻落实。"
+      },{
+        id:"3",
+        name:"怎样去思修？",
+        stime:"2019-05-13",
+        etime:"2019-05-19",
+        detail:""
+      }
+    ],
+    groupjob:[
+      {
+        id:"1",
+        jobname:"思修的目的到底是为了什么？上思修可以将一个人的思想修正吗？",
+        stime:"2019-05-13",
+        etime:"2019-05-19",
+        status:1
+      },{
+        id:"2",
+        jobname:"思修的目的到底是为了什么？上思修可以将一个人的思想修正吗？",
+        stime:"2019-05-13",
+        etime:"2019-05-19",
+        status:0
+      },{
+        id:"3",
+        jobname:"思修的目的到底是为了什么？上思修可以将一个人的思想修正吗？",
+        stime:"2019-05-13",
+        etime:"2019-05-19",
+        status:0
+      },
+    ]
   },
   //滑动切换
     swiperTab:function( e ){
@@ -54,11 +97,43 @@ Page({
       url: '../class/class?ctime='+ctime+'&cname='+cname,
     })
   },
+  // 个人作业编辑事件
+  editmyjob(e){
+    console.log( e.currentTarget.dataset.etime);
+    console.log(typeof e.currentTarget.dataset.name);
+    var id = e.currentTarget.dataset.id;
+    var name = e.currentTarget.dataset.name;
+    var stime = e.currentTarget.dataset.stime;
+    var etime = e.currentTarget.dataset.etime;
+    var detail = e.currentTarget.dataset.detail;
+    wx.navigateTo({
+      url: '../individualjobEdit/individualjobEdit?id='+id+'&name='+name+'&stime='+stime+'&etime='+etime+'&detail='+detail,
+    })
+  },
+  // 个人作业查看事件
+  checkmyjob(e){
+    var id = e.currentTarget.dataset.id;
+    var name = e.currentTarget.dataset.name;
+    var stime = e.currentTarget.dataset.stime;
+    var etime = e.currentTarget.dataset.etime;
+    var detail = e.currentTarget.dataset.detail;
+    wx.navigateTo({
+      url: '../individualjobWatch/individualjobWatch?id='+id+'&name='+name+'&stime='+stime+'&etime='+etime+'&detail='+detail,
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this 
+    wx.getSystemInfo({ 
+        success: function (res) { 
+            that.setData({ 
+                clientHeight: res.windowHeight 
+            }); 
+        } 
+    }) 
 
   },
  

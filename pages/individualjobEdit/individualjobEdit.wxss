@@ -1,0 +1,103 @@
+/* pages/individualjobEdit/individualjobEdit.wxss */
+@import "/iconfont.wxss";
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-guanbi:before {
+  content: "\e634";
+}
+
+.icon-xiangxiajiantou:before {
+  content: "\e628";
+}
+
+.icon-21:before {
+  content: "\e620";
+}
+
+.icon-ziyuan:before {
+  content: "\e60d";
+}
+/* .detailwrite-box{
+  height: 200rpx;
+  width:100%;
+  background-color: wheat;
+} */
+ .detailwrite-box .write{
+  background-color: #9999FF;
+  width: 100%;
+ }
+
+
+
+
+ /* 图片样式 */
+ /* .question-images{
+
+ }
+   */
+.q-image-wrap{
+  width: 30vw;
+  height: 25vw;
+  border: 3px solid #f0f0f0;
+  float: left;
+  margin-right: 20rpx;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-size: 100%;
+}
+.q-image-remover{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+  background: #2e82ff;
+  position: absolute;
+  top:-50rpx;
+  right:-50rpx;
+ 
+}
+.q-image{
+  box-sizing: border-box;
+  background-size:100% 100% ;
+}
+.q-image-remover icon{
+  position: absolute;
+  left:12rpx;
+  bottom:12rpx;
+  color:#fff;
+}
+ 
+.uploadImgBtn{
+  width: 150rpx;
+  height: 150rpx;
+  text-align: center;
+  line-height: 140rpx;
+  border: 6rpx solid #f0f0f0;
+  float: left;
+}
+.uploadImgBtn icon{
+  font-size: 80rpx;
+  color: #999;
+}
+
+
+/* 提交按钮样式 */
+.s-box{
+  width: 100%;
+  height: 70rpx;
+  /* background-color: wheat; */
+  bottom: 50rpx;
+  position:fixed;
+}
+.btn{
+  width: 80%;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 0 auto;
+}

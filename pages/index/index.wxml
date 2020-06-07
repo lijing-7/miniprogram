@@ -20,7 +20,7 @@
 </view> -->
 <!--新闻通知 begin-->
 	<view class="fine-puzzle mt30">
-		<view class="floor-title">新闻通知 <text>NEWS</text><icon></icon></view>	
+		<view class="floor-title">新闻通知 <text class="news">NEWS</text><icon></icon></view>	
 		<scroll-view scroll-x="true" class="puzzle-list" id="puzzle_list">
 			<view class="puzzle-li box-sizing">
 				<navigator url="">
@@ -86,9 +86,61 @@
         <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">个人作业</view>
         <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">小组作业</view>
     </view> 
-    <swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
-        <swiper-item><view>第一屏111111111111111111111111111111111111111111111111111111不就成了可编辑关闭窗口吗v</view></swiper-item>
-        <swiper-item><view>第二屏</view></swiper-item>
+    <swiper style="height: {{clientHeight?clientHeight+'px':'auto'}}" class='videoSwiper' current="{{currentTab}}" duration="300" bindchange="swiperTab"  >
+        <!-- 个人作业 -->
+				<swiper-item class="swiper-item-box">
+				 <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}" bindscrolltolower="scrollbot"> 
+					<view class="joblist-box">
+								<block wx:for="{{personjoblist}}"  wx:for-item="job" wx:key="*this" >
+										<view class="joblist-box-item">
+												<view class="joblist-item-1">
+												   <text>{{job.id}}.</text>
+													 <text class="joblist-1-text">{{job.name}}</text>	
+												</view>
+												<view class="joblist-item-box">
+														<view class="joblist-item-3">
+																<view class="fabu">发布时间:{{job.stime}}</view>
+																<view class="jiezhi">截至时间:{{job.etime}}</view>	
+														</view>
+														<view class="joblist-item-5" wx:if="{{job.detail==''}}">
+																	<text class="box-sizing">未完成</text> <text bindtap="editmyjob" data-id="{{personjoblist[index].id}}" data-name="{{personjoblist[index].name}}" data-stime="{{personjoblist[index].stime}}" data-etime="{{personjoblist[index].etime}}" data-detail="{{personjoblist[index].detail}}">编辑</text>
+														</view>
+														<view class="joblist-item-5" wx:else="{{job.detail!==''}}">
+																	<text class="box-sizing">已完成</text> <text bindtap="checkmyjob" bindtap="checkmyjob" data-id="{{personjoblist[index].id}}" data-name="{{personjoblist[index].name}}" data-stime="{{personjoblist[index].stime}}" data-etime="{{personjoblist[index].etime}}" data-detail="{{personjoblist[index].detail}}">查看</text>
+														</view>
+												</view>
+										</view>
+								</block>	
+							</view>
+				 </scroll-view> 
+				</swiper-item>
+				<!-- 小组作业 -->
+        <swiper-item class="swiper-item-box">
+					<scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}" bindscrolltolower="scrollbot"> 
+						<view class="joblist-box">
+									<block wx:for="{{groupjob}}"  wx:for-item="job" wx:key="*this" >
+											<view class="joblist-box-item">
+													<view class="joblist-item-1">
+														<text>{{job.id}}.</text>
+														<text class="joblist-1-text">{{job.jobname}}</text>	
+													</view>
+													<view class="joblist-item-box">
+															<view class="joblist-item-3">
+																	<view class="fabu">发布时间:{{job.stime}}</view>
+																	<view class="jiezhi">截至时间:{{job.etime}}</view>																			
+															</view>
+															<view class="joblist-item-5" wx:if="{{job.status==0}}">
+																		<text class="box-sizing">未完成</text> <text>编辑</text>
+															</view>
+															<view class="joblist-item-5" wx:else="{{job.status==1}}">
+																		<text class="box-sizing">已完成</text> <text>查看</text>
+															</view>
+													</view>
+											</view>
+									</block>	
+								</view>
+					</scroll-view> 	
+				</swiper-item>
     </swiper>
 </view>
 

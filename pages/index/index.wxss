@@ -31,7 +31,7 @@ swiper image{
   background-color: rgb(248, 240, 240);
 }
 .floor-title text {
-  color: #b9e1f0;
+  color: #006699;
   font-size: 30rpx;
   padding-right: 14rpx;
 }
@@ -107,85 +107,170 @@ position: absolute;
   width: 30%;
   height: 64rpx;
   line-height: 64rpx;
-  background-color: rgb(216, 201, 201);
-  font-size: 26rpx;
-  color: #968b84;
-  border: 1px dashed #faf6f4;
- 
+  /* background-color: rgb(216, 201, 201); */
+  font-size: 22rpx; 
+  color: #0a0a0a;
+  /* border: 1px dashed #faf6f4; */
 }
 /*拼团end*/
 .todayclass{
   width: 100%;
   height: 470rpx;
-  background-color: bisque;
+  background-color: rgb(172, 223, 247);
 }
 .todayclass-title{
   width: 100%;
   height: 80rpx;
   line-height: 80rpx;
   text-align: center;
-  background-color: rgb(225, 234, 247);
+  background-color: rgb(248, 240, 240);
   margin-top: 10rpx;
   font-size: 36rpx;
+  font-weight: bold;
 }
 .todayclass-list{
   width: 100%;
   height: 390rpx;
   background-color: rgb(225, 234, 247);
 }
+/* 时间背景 */
 .todayclasslist-set{
   width: 100%;
   height: 120rpx;
   margin-bottom:10rpx;
-  background-color: rgb(240, 248, 248);
+  background-color:white;
+  color: #0a0a0a;
 }
 .todayclasslist-time{
-  width: 20%;
-  height: 120rpx;
+  width: 15%;
+  height:120rpx;                                                                                                                         
   line-height: 120rpx;
   text-align: center;
   font-size: 26rpx;
-  background-color: rgb(206, 229, 235);
+  background-color: rgb(172, 223, 247);
   float: left;
-}
+} 
 .todayclasslist-cname{
-  width: 60%;
+  width: 65%;
   height: 120rpx;
-  font-size: 34rpx;
-  background: rgb(245, 217, 209);
+  font-size: 30rpx;
+  line-height: 120rpx;
+  background: rgb(172, 223, 247);
   float: left;
+  color: #0a0a0a;
   /* padding-top: 15rpx; */
 }
 .todayclasslist-entry{
   width: 20%;
-  height: 120rpx;
-  line-height: 120rpx;
+  height: 70rpx;
+  line-height: 70rpx;
   text-align: center;
-  font-size: 32rpx;
+  font-size: 26rpx;
   background-color: rgb(206, 229, 235);
   float: right;
+  border-radius: 50% ;
+  margin-top: 25rpx;
 }
 .job{
   width: 100%;
-  height: 400rpx;
+  height: 900rpx;
   background: rgb(248, 214, 147);
   margin-top:10rpx;
 }
 .job .swiper-tab{
   width:100%;
   height: 80rpx;
-  background: brown;
+  background: rgb(172, 223, 247);
   text-align: center;
   line-height: 80rpx;
-  border-bottom: 4rpx solid rgb(8, 8, 8);
+  border-bottom: 4rpx solid rgb(244, 247, 115);
   font-size: 36rpx;
 }
 .swiper-tab-item{
   display: inline-block;
   width: 50%;
-  color:black;
+  color:rgb(244, 247, 115);
 }
 .active{
-  color:rgb(244, 247, 115);
-  border-bottom: 4rpx solid rgb(244, 247, 115);
+  color:black;
+  border-bottom: 4rpx solid rgb(8, 8, 8);
 }
+.swiper-item-box{
+  height: 900rpx;
+  width: 100%;
+  background-color: white;
+}
+.joblist-box-item{
+  height: 150rpx;
+  width: 100%;
+  background-color: rgb(248, 250, 226);
+  margin-top: 10rpx;
+}
+.joblist-item-1 {
+height: 70rpx;
+display: flex;
+/* display: block; */
+}
+.joblist-item-1  text:first-child{color: #464342;}
+.joblist-item-1   text.joblist-1-text{
+  color: #464342;
+  font-size: 36rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  display: block; 
+
+}
+/* 包裹发布，截至和未完成的盒子 */
+.joblist-item-box{
+  height: 80rpx;
+  margin-bottom: 5rpx;
+  display: flex;
+}
+.joblist-item-3 {
+height: 80rpx;
+width: 50%;
+}
+.joblist-item-3 .fabu{font-size: 26rpx;}
+.joblist-item-3  .jiezhi{
+  color: #464342;
+  font-size: 26rpx;
+}
+.joblist-item-5{
+  width: 50%;
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+.joblist-item-5 text{
+  float: left;
+  display: block;
+  text-align: center;
+}
+.joblist-item-5 text:first-child{
+  width: 35%;
+  height: 50rpx;
+  line-height: 50rpx;
+  background-color: rgb(172, 223, 247);
+  font-size: 30rpx;
+  color: #464342;
+  /* border: 1px dashed #ff6600; */
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-right: 30rpx;
+  margin-left: 50rpx;
+  border-radius: 1rem;
+}
+.joblist-item-5  text:last-child{
+  width: 35%;
+  height: 50rpx;
+  line-height: 50rpx;
+  background-color: rgb(172, 223, 247);
+  color: #464342;
+  font-size: 30rpx;
+  margin: 20rpx;
+  margin-right: 20rpx;
+  margin-left: 10rpx;
+  float: right;
+  border-radius: 1rem;
+}
+

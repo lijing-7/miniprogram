@@ -8,7 +8,7 @@ Page({
   data: {
     array: ['天津大学', '天津南开大学', '天津工业大学', '天津理工大学'],
     index: 0,
-    selected:'请选择学校',
+    selected:'',
     disabled:false,
     sch:'',
     no:'',
@@ -41,9 +41,10 @@ Page({
     }
   },
   navitohome: function(e){
-    wx.navigateTo({
-      url: '../index/index',
-    })
+      wx.switchTab({
+        url: '../index/index',
+      })
+
   },
   formSubmit: function (e) {
     // wx.showLoading({
@@ -51,6 +52,7 @@ Page({
     // })
     console.log(e);
     this.setData({ disabled: true});
+    
     // wx.request({
     //   url: app.globalData.url.login, //仅为示例，并非真实的接口地址
     //   data: {

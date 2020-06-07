@@ -1,0 +1,32 @@
+<!--pages/individualjobEdit/individualjobEdit.wxml-->
+<view>编辑作业</view>
+<view>
+    <text>{{id}}</text>
+    <text>{{name}}</text>
+    <view>发布时间:{{stime}}</view>
+    <view>截止时间:{{etime}}</view>
+    <view> 
+        <text>上传文件:{{filename}}</text>
+        <button bindtap="uploadfile">选择</button>
+    </view>
+    <view class="detailwrite-box">
+        <textarea class="write">{{detail}} </textarea> 
+    </view>
+</view>
+        <text class='pf-type'>添加图片</text>
+        <view class="question-images clearFloat">
+            <block wx:for="{{images}}" wx:key="*this">
+                <view class="q-image-wrap" style="background-image:url({{item}})">
+                    <!-- 图片缩略图  -->
+                    <!-- <image class="q-image" src="{{item}}"  data-idx="{{index}}" bindtap="handleImagePreview"></image> -->
+                    <!-- 移除图片的按钮  -->
+                    <view class="q-image-remover" data-idx="{{index}}" bindtap="removeImage">
+                        <icon class='iconfont icon-guanbi'></icon>
+                    </view>
+                </view>
+            </block>
+            <view class='uploadImgBtn' bindtap="chooseImage" wx:if="{{images.length < 3}}">
+                <icon class='iconfont icon-ziyuan'></icon>
+            </view>
+        </view>         
+    <view class="s-box"><button class="btn" type="primary">确认提交</button></view>
