@@ -69,7 +69,8 @@
 <!--新闻通知 end-->
 <!-- 今日课程 -->
 <view class="todayclass">
-    <view class="todayclass-title">今日课程</view>
+		<view class="todayclass-title">今日课程<text class="news">COURSE</text><icon></icon></view>
+    <!-- <view class="todayclass-title">今日课程<text class="news">COURSE</text></view> -->
     <view class="todayclass-list">
           <view class="list-item" wx:for="{{todayclasslist}}">
             <view class="todayclasslist-set">
@@ -94,7 +95,7 @@
 								<block wx:for="{{personjoblist}}"  wx:for-item="job" wx:key="*this" >
 										<view class="joblist-box-item">
 												<view class="joblist-item-1">
-												   <text>{{job.id}}.</text>
+												   <text decode="{{true}}">{{job.id}}&ensp;</text>
 													 <text class="joblist-1-text">{{job.name}}</text>	
 												</view>
 												<view class="joblist-item-box">
@@ -103,10 +104,10 @@
 																<view class="jiezhi">截至时间:{{job.etime}}</view>	
 														</view>
 														<view class="joblist-item-5" wx:if="{{job.detail==''}}">
-																	<text class="box-sizing">未完成</text> <text bindtap="editmyjob" data-id="{{personjoblist[index].id}}" data-name="{{personjoblist[index].name}}" data-stime="{{personjoblist[index].stime}}" data-etime="{{personjoblist[index].etime}}" data-detail="{{personjoblist[index].detail}}">编辑</text>
+																	<text class="box-sizing"  style="color:rgb(172, 223, 247);">未完成</text> <text bindtap="editmyjob" data-id="{{personjoblist[index].id}}" data-name="{{personjoblist[index].name}}" data-stime="{{personjoblist[index].stime}}" data-etime="{{personjoblist[index].etime}}" data-detail="{{personjoblist[index].detail}}"  style="color:rgb(172, 223, 247);">编辑</text>
 														</view>
 														<view class="joblist-item-5" wx:else="{{job.detail!==''}}">
-																	<text class="box-sizing">已完成</text> <text bindtap="checkmyjob" bindtap="checkmyjob" data-id="{{personjoblist[index].id}}" data-name="{{personjoblist[index].name}}" data-stime="{{personjoblist[index].stime}}" data-etime="{{personjoblist[index].etime}}" data-detail="{{personjoblist[index].detail}}">查看</text>
+																	<text class="box-sizing" style="color:white;background-color: rgb(172, 223, 247);">已完成</text> <text bindtap="checkmyjob" bindtap="checkmyjob" data-id="{{personjoblist[index].id}}" data-name="{{personjoblist[index].name}}" data-stime="{{personjoblist[index].stime}}" data-etime="{{personjoblist[index].etime}}" data-detail="{{personjoblist[index].detail}}" style="color:white;background-color: rgb(172, 223, 247);">查看</text>
 														</view>
 												</view>
 										</view>

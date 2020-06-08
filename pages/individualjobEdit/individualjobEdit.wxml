@@ -1,17 +1,43 @@
 <!--pages/individualjobEdit/individualjobEdit.wxml-->
-<view>编辑作业</view>
-<view>
-    <text>{{id}}</text>
-    <text>{{name}}</text>
-    <view>发布时间:{{stime}}</view>
-    <view>截止时间:{{etime}}</view>
-    <view> 
-        <text>上传文件:{{filename}}</text>
-        <button bindtap="uploadfile">选择</button>
-    </view>
-    <view class="detailwrite-box">
-        <textarea class="write">{{detail}} </textarea> 
-    </view>
+<view >
+        <!-- <text>{{id}}</text> -->
+         <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cells__title">题目</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_active">
+                    <view class="weui-cell__bd">
+                        <textarea class="weui-textarea" disabled="true" style="height: auto">{{name}}</textarea>
+                    </view>
+                </view>
+            </view>  
+            <view class="weui-cell weui-cell_example ">
+                <view class="weui-cell__bd">发布时间</view>
+                <view class="weui-cell__ft">{{stime}}</view>
+            </view>
+            <view class="weui-cell weui-cell_example ">
+                <view class="weui-cell__bd">截止时间</view>
+                <view class="weui-cell__ft">{{etime}}</view>
+            </view>
+            <view class="weui-cell weui-cell_example ">
+                <view class="weui-cell__bd">上传文件<text space="nbsp">  {{filename}}</text></view>
+                <view class="weui-cell__ft">
+                <!-- <button class=""  bindtap="uploadfile">选择</button> -->
+                	<a class="weui-btn weui-btn_mini weui-btn_default" bindtap="uploadfile">选择</a>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">内容</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_active">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请输入文本" style="height: 3.3em"  value="{{detail}}"/>
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+        </view>
+
+
 </view>
         <text class='pf-type'>添加图片</text>
         <view class="question-images clearFloat">
@@ -30,3 +56,5 @@
             </view>
         </view>         
     <view class="s-box"><button class="btn" type="primary">确认提交</button></view>
+
+

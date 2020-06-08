@@ -1,5 +1,9 @@
 /* pages/individualjobEdit/individualjobEdit.wxss */
 @import "/iconfont.wxss";
+/* .container{
+  margin-top: 20rpx;
+  padding: 3rpx 5rpx;
+} */
 .iconfont {
   font-family: "iconfont" !important;
   font-size: 16px;
@@ -93,7 +97,7 @@
   height: 70rpx;
   /* background-color: wheat; */
   bottom: 50rpx;
-  position:fixed;
+  /* position:fixed; */
 }
 .btn{
   width: 80%;

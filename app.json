@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/login/login",
     "pages/index/index",
+    "pages/login/login",
     "pages/individualjobEdit/individualjobEdit",
     "pages/individualjob/individualjob",
     "pages/individualjobWatch/individualjobWatch",
@@ -27,20 +27,14 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "/images/index/home_no.png",
-        "selectedIconPath": "/images/index/shouye3.png"
-      },
-      {
-        "pagePath": "pages/classactive/classactive",
-        "text": "活动",
-        "iconPath": "/images/index/active_no.png",
-        "selectedIconPath": "/images/index/active_click.png"
+        "iconPath": "/images/index/shouye3.png",
+        "selectedIconPath": "/images/index/shouye1.png"
       },
       {
         "pagePath": "pages/mycenter/mycenter",
         "text": "个人中心",
-        "iconPath": "/images/index/mycenter_no.png",
-        "selectedIconPath": "/images/index/mycenter_click.png"
+        "iconPath": "/images/mycenter/mycenter.png",
+        "selectedIconPath": "/images/mycenter/mycenter1.png"
       }
     ]
   },
