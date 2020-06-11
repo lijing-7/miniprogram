@@ -46,25 +46,28 @@ Page({
         detail:""
       }
     ],
-    groupjob:[
+    groupjoblist:[
       {
-        id:"1",
+        id:"01",
         jobname:"思修的目的到底是为了什么？上思修可以将一个人的思想修正吗？",
+        gname:"远在天边",
         stime:"2019-05-13",
         etime:"2019-05-19",
-        status:1
+        detail:""
       },{
-        id:"2",
+        id:"02",
         jobname:"思修的目的到底是为了什么？上思修可以将一个人的思想修正吗？",
+        gname:"远在天边",
         stime:"2019-05-13",
         etime:"2019-05-19",
-        status:0
+        detail:""
       },{
-        id:"3",
+        id:"03",
         jobname:"思修的目的到底是为了什么？上思修可以将一个人的思想修正吗？",
+        gname:"远在天边",
         stime:"2019-05-13",
         etime:"2019-05-19",
-        status:0
+        detail:"jdfgvnxcvlkdflgjkcdv"
       },
     ]
   },
@@ -75,6 +78,10 @@ Page({
         currentTba:e.detail.current
       });
     },
+    // 截获竖向滑动
+ catchTouchMove:function(res){
+    return false
+  },
   //点击切换
   clickTab: function( e ) { 
     var that = this; 
@@ -121,6 +128,34 @@ Page({
       url: '../individualjobWatch/individualjobWatch?id='+id+'&name='+name+'&stime='+stime+'&etime='+etime+'&detail='+detail,
     })
   },
+
+  // 小组作业编辑事件
+  editgroupjob(e){
+    console.log( e.currentTarget.dataset.etime);
+    console.log(typeof e.currentTarget.dataset.jobname);
+    var id = e.currentTarget.dataset.id;
+    var jobname = e.currentTarget.dataset.jobname;
+    var stime = e.currentTarget.dataset.stime;
+    var etime = e.currentTarget.dataset.etime;
+    var gname = e.currentTarget.dataset.gname;
+    var detail = e.currentTarget.dataset.detail;
+    wx.navigateTo({
+      url: '../groupjobEdit/groupjobEdit?id='+id+'&jobname='+jobname+'&stime='+stime+'&etime='+etime+'&detail='+detail+'&gname='+gname,
+    })
+  },
+  // 小组作业查看事件
+  checkgroupjob(e){
+    var id = e.currentTarget.dataset.id;
+    var jobname = e.currentTarget.dataset.jobname;
+    var stime = e.currentTarget.dataset.stime;
+    var etime = e.currentTarget.dataset.etime;
+    var gname = e.currentTarget.dataset.gname;
+    var detail = e.currentTarget.dataset.detail;
+    wx.navigateTo({
+      url: '../groupjobWatch/groupjobWatch?id='+id+'&jobname='+jobname+'&stime='+stime+'&etime='+etime+'&detail='+detail+'&gname='+gname,
+    })
+  },
+  
 
   /**
    * 生命周期函数--监听页面加载

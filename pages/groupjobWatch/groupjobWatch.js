@@ -1,4 +1,4 @@
-// pages/individualjob/individualjob.js
+// pages/groupjobWatch/groupjobWatch.js
 Page({
 
   /**
@@ -6,15 +6,27 @@ Page({
    */
   data: {
 
-
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
- 
-
+    var that = this;
+    var id = options.id;
+    var jobname = options.jobname;
+    var stime = options.stime;
+    var etime = options.etime;
+    var detail = options.detail;
+    var gname = options.gname;
+    that.setData({
+      id : id,
+      jobname : jobname,
+      stime : stime,
+      etime : etime,
+      detail : detail,
+      gname : gname ,
+    })
   },
 
   /**

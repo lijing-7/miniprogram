@@ -1,18 +1,20 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/login/login",
+    "pages/index/index",
     "pages/individualjobEdit/individualjobEdit",
-    "pages/individualjob/individualjob",
-    "pages/individualjobWatch/individualjobWatch",
-    "pages/class/class",
+    "pages/groupjobEdit/groupjobEdit",
     "pages/mycenter/mycenter",
     "pages/classactive/classactive",
     "pages/teamtalk/teamtalk",
-    "pages/groupjob/groupjob"
+    "pages/groupjob/groupjob",
+    "pages/individualjobWatch/individualjobWatch",
+    "pages/groupjobWatch/groupjobWatch",
+    "pages/class/class"
   ],
+ 
   "window": {
-    "navigationBarBackgroundColor": "#006699",
+    "navigationBarBackgroundColor": "#3399CC",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "思政课堂",
     "backgroundColor": "#eeeeee",
@@ -21,7 +23,7 @@
   "tabBar": {
     "custom": false,
     "color": "#003366",
-    "backgroundColor": "#006699",
+    "backgroundColor": "#3399CC",
     "selectedColor": "#ffffff",
     "list": [
       {

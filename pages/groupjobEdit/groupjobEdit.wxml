@@ -1,0 +1,7 @@
+<!--pages/groupjobEdit/groupjobEdit.wxml-->
+<text>pages/groupjobEdit/groupjobEdit.wxml</text>
+<view>{{jobname}}</view>
+<view>{{stime}}</view>
+<view>{{etiam}}</view>
+<view>{{id}}</view>
+<view>{{gname}}</view>

@@ -1,5 +1,0 @@
-<!--pages/individualjob/individualjob.wxml-->
-<view class="jobcontainer">
-  <view class="title">个人作业在线编辑</view>
-
-</view>

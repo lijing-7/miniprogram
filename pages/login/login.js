@@ -26,6 +26,18 @@ Page({
       selected: array[index]
     })
   },
+  schinput:function(e){
+    wx.hideKeyboard({
+      complete: (res) => {
+        console.log('hideKeyboard res', res)
+      },
+    })
+    this.setData({sch:e.detail.value});
+    this.setData({schinput:true});
+    if(this.data.schinput==true && this.data.pwdinput==true&& this.data.noinput==true){
+      this.setData({ disabled: false });
+    }
+  },
   noinput:function(e){
     this.setData({no:e.detail.value});
     this.setData({noinput:true});

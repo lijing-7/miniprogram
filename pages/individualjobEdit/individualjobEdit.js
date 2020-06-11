@@ -5,8 +5,25 @@ Page({
    */
   data: {
     filename:'',
-    images: []
+    images: [],
+    max:200,
   }, 
+  //文本域字数限制
+  inputs:function(e){
+    var value = e.detail.value;
+    var  len = parseInt(value.length);
+    if(len > this.data.max )return;
+    this.setData({
+      currentWordNumber:len
+    });
+    if(this.data.currentWordNumber == 200){
+      wx.showModal({
+        title: '提示',
+        content: '您输入字数已达上限！',
+      })
+    }
+
+  },
   //上传文件
   uploadfile:function(){
       var ths = this;
@@ -42,7 +59,7 @@ Page({
       success: res => {
         const images = this.data.images.concat(res.tempFilePaths)
         // 限制最多只能留下3张照片
-        const images1 = images.length <= 3 ? images : images.slice(0, 3)
+        const images1 = images.length <= 4 ? images : images.slice(0, 4)
         this.setData({
           images: images1
         })
@@ -78,6 +95,7 @@ Page({
     var stime = options.stime;
     var etime = options.etime;
     var detail = options.detail;
+    var detail = options.detail;
     that.setData({
       id : id,
       name : name,
@@ -85,6 +103,7 @@ Page({
       etime : etime,
       detail : detail,
     })
+
 
   },
 

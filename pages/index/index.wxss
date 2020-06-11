@@ -31,7 +31,7 @@ swiper image{
   background-color: white;
 }
 .floor-title text {
-  color: #006699;
+  color: #3399CC;
   font-size: 30rpx;
   padding-right: 14rpx;
 }
@@ -141,7 +141,7 @@ position: absolute;
   margin-top: 30rpx;
 }
 .todayclass-title text{
-  color: #006699;
+  color: #3399CC;
   font-size: 30rpx;
   padding-right: 14rpx;
   padding-left: 14rpx;
@@ -158,6 +158,8 @@ position: absolute;
   margin-bottom:10rpx;
   background-color:white;
   color: #0a0a0a;
+  margin-left: 4%;
+  margin-right: 1%;
 }
 .todayclasslist-time{
   width: 14%;
@@ -173,7 +175,7 @@ position: absolute;
   margin-left: 10rpx;
 } 
 .todayclasslist-cname{
-  width: 64%;
+  width: 55%;
   height: 90rpx;
   line-height: 90rpx;
   font-size: 30rpx;
@@ -198,14 +200,15 @@ position: absolute;
   background-color: rgb(243, 196, 181);
   float: right;
   border-radius: 2em ;
-  margin: 25rpx 8rpx;
+  margin-top:25rpx;
+  margin-right: 8%;
 }
 /* 今日课程end */
 /* 作业start */
 .job{
   width: 100%;
   height: 900rpx;
-    margin-top:60rpx;
+  margin-top:60rpx;
 }
 .job .swiper-tab{
   height: 96rpx;
@@ -216,21 +219,20 @@ position: absolute;
   font-weight: bold;
   position: relative;
   background-color: white;
-  border-radius: 1em;
+  border-radius: 50px;
   border: 1rpx solid rgb(243, 196, 181);
-  margin:20rpx 10rpx;
+  margin:20rpx 4%;
 }
 /* 未选中 */
 .swiper-tab-item{
   display: inline-block;
   width: 50%;
   color:rgb(243, 196, 181);
-
 }
 .active{
   color:black;
   /* border: 1rpx solid rgb(8, 8, 8); */
-  border-radius: 1em;
+  border-radius: 50px;
   background: rgb(243, 196, 181);
 }
 .swiper-item-box{
@@ -240,26 +242,30 @@ position: absolute;
 }
 .joblist-box-item{
   height: 170rpx;
-  width: 100%;
-  background-color: white;
-  margin-top: 20rpx;
+  width: 88%;
+  /* background-color: rgb(119, 60, 60); */
   border: 1px solid #f6f6f6;
- margin-left: 10rpx;
- 
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-left: 4%;
+  margin-right: 8%;
+  padding-left: 10rpx;
 }
 .joblist-item-1 {
+width:100%; 
+/* background-color: blueviolet; */
 height: 90rpx;
 display: flex;
 /* display: block; */
-
 }
 .joblist-item-1  text:first-child{
   font-size: 30rpx;
   line-height: 40rpx;
   /* font-weight: bold; */
   color: #222222;
+  /* margin: 20rpx auto; */
   margin-top: 20rpx;
-  margin-bottom: 20rpx;
+  margin-bottom: 10rpx;
 }
 .joblist-item-1   text.joblist-1-text{
   overflow: hidden;
@@ -271,24 +277,24 @@ display: flex;
   /* font-weight: bold; */
   color: #222222;
   margin-top: 20rpx;
-  margin-bottom: 20rpx;
-
+  margin-bottom: 10rpx;
 }
 /* 包裹发布，截至和未完成的盒子 */
 .joblist-item-box{
+  width: 88%;
   height: 80rpx;
   margin-bottom: 5rpx;
   display: flex;
 }
 .joblist-item-3 {
 height: 80rpx;
-width: 50%;
+width: 45%;
+padding-left: 5rpx;
 }
 .joblist-item-3 .fabu{
   font-size: 26rpx;
   font-size: 22rpx;
   color: #0a0a0a;
-
 }
 .joblist-item-3  .jiezhi{
   font-size: 26rpx;
@@ -296,13 +302,15 @@ width: 50%;
   color: #0a0a0a;
 }
 .joblist-item-5{
-  width: 50%;
+  width: 55%;
   line-height: 80rpx;
   font-size: 30rpx;
+  float: right;
+  margin-left: 16%;
 }
 .joblist-item-5 text{
   float: left;
-  display: block;
+  /* display: block; */
   text-align: center;
 }
 .joblist-item-5 text:first-child{
@@ -315,8 +323,8 @@ width: 50%;
   border: 1px solid rgb(172, 223, 247);
   margin-top: 10rpx;
   margin-bottom: 20rpx;
-  margin-right: 28rpx;
-  margin-left: 50rpx;
+  /* margin-right: 5rpx; */
+  margin-left: 65rpx;
   border-radius: 1rem;
 }
 .joblist-item-5  text:last-child{
@@ -326,11 +334,23 @@ width: 50%;
   /* background-color: rgb(243, 196, 181); */
   color: #464342;
   font-size: 26rpx;
-  margin: 10rpx;
-  margin-right: 20rpx;
-  margin-left: 10rpx;
+  margin-top: 10rpx;
+  margin-right: -55rpx;
+  margin-left: 5rpx;
   float: right;
   border-radius: 1rem;
   border: 1px solid rgb(172, 223, 247);
 }
 
+/* 小组作业start */
+.joblist-box-item-group{
+  height: 200rpx;
+  width: 88%;
+  /* background-color: rgb(119, 60, 60); */
+  border: 1px solid #f6f6f6;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-left: 4%;
+  margin-right: 8%;
+  padding-left: 10rpx;
+}
