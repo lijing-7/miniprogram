@@ -1,0 +1,10 @@
+<!--pages/groupjobWatch/groupjobWatch.wxml-->
+<text>pages/groupjobWatch/groupjobWatch.wxml</text>
+<view>
+    <text>{{id}}</text>
+    <text>{{jobname}}</text>
+    <view>小组名称：{{gname}}</view>
+    <view>发布时间：{{stime}}</view>
+    <view>截至事件：{{etime}}</view>
+    <view>{{detail}}</view>
+</view>

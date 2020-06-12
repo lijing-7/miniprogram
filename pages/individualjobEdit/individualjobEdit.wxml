@@ -1,0 +1,61 @@
+<!--pages/individualjobEdit/individualjobEdit.wxml-->
+<view >
+        <!-- <text>{{id}}</text> -->
+         <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cells__title">题目</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_active">
+                    <view class="weui-cell__bd">
+                        <textarea class="weui-textarea" disabled="true" style="height: auto">{{name}}</textarea>
+                    </view>
+                </view>
+            </view>  
+            <view class="weui-cell weui-cell_example ">
+                <view class="weui-cell__bd">发布时间</view>
+                <view class="weui-cell__ft">{{stime}}</view>
+            </view>
+            <view class="weui-cell weui-cell_example ">
+                <view class="weui-cell__bd">截止时间</view>
+                <view class="weui-cell__ft">{{etime}}</view>
+            </view>
+            <view class="weui-cell weui-cell_example ">
+                <view class="weui-cell__bd">上传文件<text space="nbsp">  {{filename}}</text></view>
+                <view class="weui-cell__ft">
+                <!-- <button class=""  bindtap="uploadfile">选择</button> -->
+                	<a class="weui-btn weui-btn_mini weui-btn_default" bindtap="uploadfile">选择</a>
+                </view>
+            </view>
+        </view>
+
+        <form bindsubmit="submitform">
+        <view class="weui-cells__title">内容</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_active">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" name="textarea" placeholder="请输入文本" cursor-spacing="120rpx" style="height: 3.3em"  maxlength="{{max}}" bindinput="inputs"  value="{{detail}}"/>
+                    <view class="weui-textarea-counter">{{currentWordNumber|0}}/{{max}}</view>
+                </view>
+            </view>
+        </view>                      
+        <view class="weui-cells__title">添加图片</view> 
+        <view class="question-images clearFloat">
+            <block wx:for="{{images}}" wx:key="*this">
+                <view class="q-image-wrap" style="background-image:url({{item}})">
+                    <!-- 图片缩略图  -->
+                    <!-- <image class="q-image" src="{{item}}"  data-idx="{{index}}" bindtap="handleImagePreview"></image> -->
+                    <!-- 移除图片的按钮  -->
+                    <view class="q-image-remover" data-idx="{{index}}" bindtap="removeImage">
+                        <icon class='iconfont icon-guanbi'></icon>
+                    </view>
+                </view>
+            </block>
+            <view class='uploadImgBtn' bindtap="chooseImage" wx:if="{{images.length < 4}}">
+                <icon class='iconfont icon-ziyuan'></icon>
+            </view>
+        </view>         
+        <view class="s-box "><button class="btn"  type="primary" form-type="submit">确认提交</button></view>
+         </form>
+</view>
+       
+
+

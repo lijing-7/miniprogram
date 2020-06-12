@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/individualjobEdit/individualjobEdit",
+    "pages/groupjobEdit/groupjobEdit",
+    "pages/mycenter/mycenter",
+    "pages/classactive/classactive",
+    "pages/teamtalk/teamtalk",
+    "pages/groupjob/groupjob",
+    "pages/individualjobWatch/individualjobWatch",
+    "pages/groupjobWatch/groupjobWatch",
+    "pages/class/class"
+  ],
+ 
+  "window": {
+    "navigationBarBackgroundColor": "#3399CC",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "思政课堂",
+    "backgroundColor": "#eeeeee",
+     "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "custom": false,
+    "color": "#003366",
+    "backgroundColor": "#3399CC",
+    "selectedColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/index/shouye3.png",
+        "selectedIconPath": "/images/index/shouye1.png"
+      },
+      {
+        "pagePath": "pages/mycenter/mycenter",
+        "text": "个人中心",
+        "iconPath": "/images/mycenter/mycenter.png",
+        "selectedIconPath": "/images/mycenter/mycenter1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap22.json"
+}

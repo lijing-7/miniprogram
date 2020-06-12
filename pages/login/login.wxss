@@ -1,0 +1,117 @@
+/* pages/login/login.wxss */
+/* pages/login/login.wxss */
+page{
+  height: 100%;
+  background-size:100%;
+  /* background-image: url('http://songlijuan.top/bk2.jpg'); */
+}
+ .weui-cell{
+   padding: 5px;
+ }
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #f2f2f2;     */
+} 
+ /* 用户登录 */
+ .logtitle{
+  margin-top: 200rpx;
+  height: 120rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: #020507;
+  font-weight: 600;
+  letter-spacing: 6px;
+
+ }
+/*登录图片*/
+.login-icon{
+  flex: none;
+  margin: 0 auto;
+  margin-top: 10rpx;
+}
+.login-img{
+  /* width: 220rpx;
+  height: 220rpx; */
+  /* border-radius: 110rpx; */
+  opacity: 0.6;
+}
+image {
+  width: 320px;
+  height: 220px;
+  display: inline-block;
+  overflow: hidden;
+  }
+ 
+/*表单内容*/
+.login-from {
+  margin-top: 20px;
+  flex: auto;
+  height:100%;
+  width: 80%;
+}
+.logtitleline{
+  border: 1px solid #3399CC;
+  /* height: 1px; */
+  box-shadow: 0px 1px 3px #3399CC;
+  width: 70%;
+  text-align: center;
+}
+
+/* 选择学校开始 */
+.school-gross{
+  width: 100%;
+  height: 80rpx;
+  background-color: white;
+  display: flex;
+  margin-bottom: 30rpx;
+}
+.sch-name{
+  width: 25%;
+  height: 80rpx;
+  background-color: white;
+  letter-spacing: 8rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+.sch-choice{
+  width: 75%;
+  height: 60rpx;
+  background-color: white;
+  border:2px solid #3399CC;
+  border-radius:1rem;
+  line-height: 60rpx;
+}
+
+/*按钮*/
+.loginBtnView {
+  /* background-color: aqua; */
+  margin-top: 0px;
+  margin-bottom: 25px;
+  padding-bottom: 80rpx;
+}
+ 
+.btn {
+  margin-top: 35px;
+  background-color:#3399CC ;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+  /* border: 0.1rpx solid rgb(31, 30, 30); */
+  border-radius: 40rpx;
+  padding: 0px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+ 
+.nameImage, .keyImage {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px
+}

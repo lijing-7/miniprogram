@@ -1,0 +1,9 @@
+<!--pages/individualjobWatch/individualjobWatch.wxml-->
+<text>查看个人作业</text>
+<view>
+    <text>{{id}}</text>
+    <text>{{name}}</text>
+    <view>发布时间：{{stime}}</view>
+    <view>截至事件：{{etime}}</view>
+    <view>{{detail}}</view>
+</view>
