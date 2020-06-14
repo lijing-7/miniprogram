@@ -22,7 +22,11 @@
 			"disablePlugins": [],
 			"outputPath": ""
 		},
+<<<<<<< HEAD
 		"useCompilerModule": false,
+=======
+		"useCompilerModule": true,
+>>>>>>> c7cfac8c9d188ceaaec36538f4e456547281cbaa
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",

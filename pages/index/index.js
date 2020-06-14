@@ -6,6 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
     msgList: [
       { url: "url", title: "政治思想工作的重要性，培养学科核心素养1" },
       { url: "url", title: "政治思想工作的重要性，培养学科核心素养2" },
@@ -14,6 +15,8 @@ Page({
       {img:"/images/index/lunbo1.jpg",text:"重磅！'在经历中学习——疫情防控公开课'隆重上线，欢迎欢迎",data:"2019-08-12",},
       {img:"/images/index/lunbo4.jpg",text:"重磅！'在经历中学习——疫情防控公开课'隆重上线",data:"2019-08-12",}
     ],
+=======
+>>>>>>> c7cfac8c9d188ceaaec36538f4e456547281cbaa
     inputShowed: false,
     inputVal: "",
     todayclasslist:[
@@ -169,6 +172,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+<<<<<<< HEAD
     // var that = this 
     // wx.getSystemInfo({ 
     //     success: function (res) { 
@@ -177,6 +181,16 @@ Page({
     //         }); 
     //     } 
     // }) 
+=======
+    var that = this 
+    wx.getSystemInfo({ 
+        success: function (res) { 
+            that.setData({ 
+                clientHeight: res.windowHeight 
+            }); 
+        } 
+    }) 
+>>>>>>> c7cfac8c9d188ceaaec36538f4e456547281cbaa
 
   },
  

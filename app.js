@@ -5,6 +5,10 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+<<<<<<< HEAD
+=======
+
+>>>>>>> c7cfac8c9d188ceaaec36538f4e456547281cbaa
     // 登录
     wx.login({
       success: res => {
@@ -31,6 +35,7 @@ App({
         }
       }
     })
+<<<<<<< HEAD
     if (!wx.cloud) {
       console.error('请使用 2.2.3 或以上的基础库以使用云能力')
     } else {
@@ -44,5 +49,10 @@ App({
   globalData: {
     // userInfo: null
     numberFunction:'6666'
+=======
+  },
+  globalData: {
+    userInfo: null
+>>>>>>> c7cfac8c9d188ceaaec36538f4e456547281cbaa
   }
 })

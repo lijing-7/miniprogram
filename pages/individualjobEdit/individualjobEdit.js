@@ -85,6 +85,7 @@ Page({
       urls: images,  //所有要预览的图片
     })
   },
+<<<<<<< HEAD
   //数据提交
   submitform: function(e) {
     const db = wx.cloud.database()
@@ -115,6 +116,8 @@ Page({
     })
   },
 
+=======
+>>>>>>> c7cfac8c9d188ceaaec36538f4e456547281cbaa
   /**
    * 生命周期函数--监听页面加载
    */

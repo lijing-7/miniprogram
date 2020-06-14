@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <!--新闻公告 -->
+<<<<<<< HEAD
 <!-- <view class="notice">【公告】政治思想工作的重要性，培养学科核心素养</view> -->
 <!-- 公告 -->
 <view class='notice'>
@@ -43,6 +44,12 @@
 <!--新闻通知 begin-->
 	<!-- <view class="fine-puzzle mt30">
 		<view class="floor-title">新闻通知 <text class="news">NEWS</text><icon></icon></view>	
+=======
+<view class="notice">【公告】政治思想工作的重要性，培养学科核心素养</view>
+<!--新闻通知 begin-->
+	<view class="fine-puzzle mt30">
+		<view class="floor-title">新闻通知 <text class="news">NEWS</text><icon></icon></view>	
+>>>>>>> c7cfac8c9d188ceaaec36538f4e456547281cbaa
 		<scroll-view scroll-x="true" class="puzzle-list" id="puzzle_list">
 			<view class="puzzle-li box-sizing">
 				<navigator url="">
@@ -53,7 +60,11 @@
 							<text class="puzzle-ll-text3">2019-08-12</text>
 						</view>
 						<view class="puzzleft-r fr">
+<<<<<<< HEAD
 							<text class="box-sizing">查看详情</text>
+=======
+							<!-- <text class="box-sizing">查看详情</text> -->
+>>>>>>> c7cfac8c9d188ceaaec36538f4e456547281cbaa
 						</view>
 					</view>
 				</navigator>
@@ -67,11 +78,16 @@
 							<text class="puzzle-ll-text3">2019-08-12</text>
 						</view>
 						<view class="puzzleft-r fr">
+<<<<<<< HEAD
+=======
+							<!-- <text class="box-sizing">查看详情</text> -->
+>>>>>>> c7cfac8c9d188ceaaec36538f4e456547281cbaa
 						</view>
 					</view>
 				</navigator>
 			</view>
 			<view class="puzzle-li box-sizing">
+<<<<<<< HEAD
 					<navigator url="">
 						<view class="puzzle-img"><image src="/images/index/lunbo1.jpg" alt=""></image></view>
 						<text class="puzzle-name plr20">重磅！'在经历中学习——疫情防控公开课'隆重上线</text>
@@ -86,6 +102,23 @@
 			</view>
 		</scroll-view>
 	</view> -->
+=======
+				<navigator url="">
+					<view class="puzzle-img"><image src="/images/index/lunbo1.jpg" alt=""></image></view>
+					<text class="puzzle-name plr20">重磅！'在经历中学习——疫情防控公开课'隆重上线</text>
+					<view class="puzzle-ft plr20 clearfix">
+						<view class="puzzleft-l fl">
+							<text class="puzzle-ll-text3">2019-08-12</text>
+						</view>
+						<view class="puzzleft-r fr">
+							<!-- <text class="box-sizing">查看详情</text> -->
+						</view>
+					</view>
+				</navigator>
+			</view>
+		</scroll-view>
+	</view>
+>>>>>>> c7cfac8c9d188ceaaec36538f4e456547281cbaa
 <!--新闻通知 end-->
 <!-- 今日课程 -->
 <view class="todayclass">
@@ -107,11 +140,19 @@
         <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">个人作业</view>
         <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">小组作业</view>
     </view> 
+<<<<<<< HEAD
     <swiper style="height:500rpx;" class='videoSwiper' current="{{currentTab}}" duration="300"  	bindchange="swiperTab" >
 	
         <!-- 个人作业 -->
 				<swiper-item class="swiper-item-box" catchtouchmove='catchTouchMove'>
 				 <scroll-view scroll-y="{{true}}" style="height:500rpx;" bindscrolltolower="scrollbot"> 
+=======
+    <swiper style="height: {{clientHeight?clientHeight+'px':'auto'}}" class='videoSwiper' current="{{currentTab}}" duration="300"  	bindchange="swiperTab" >
+	
+        <!-- 个人作业 -->
+				<swiper-item class="swiper-item-box" catchtouchmove='catchTouchMove'>
+				 <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}" bindscrolltolower="scrollbot"> 
+>>>>>>> c7cfac8c9d188ceaaec36538f4e456547281cbaa
 					<view class="joblist-box">
 								<block wx:for="{{personjoblist}}"  wx:for-item="job" wx:key="*this" >
 										<view class="joblist-box-item">
@@ -138,7 +179,11 @@
 				</swiper-item>
 				<!-- 小组作业 -->
         <swiper-item class="swiper-item-box">
+<<<<<<< HEAD
 					<scroll-view scroll-y="{{true}}" style="height:500rpx;" bindscrolltolower="scrollbot"> 
+=======
+					<scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}" bindscrolltolower="scrollbot"> 
+>>>>>>> c7cfac8c9d188ceaaec36538f4e456547281cbaa
 						<view class="joblist-box">
 									<block wx:for="{{groupjoblist}}"  wx:for-item="gjob" wx:key="*this" >
 											<view class="joblist-box-item-group">
